@@ -32,32 +32,32 @@ Tagging Tests
 
 Tests need to be tagged in order to filter them when run with Maven. Therefore use the following syntax:
 
-    ```` java
-    // For Unit Tests
-    @Category(ch.lihsmi.UnitTests.class)
-    public class ExampleUnitTest {
+```` java
+// For Unit Tests
+@Category(ch.lihsmi.UnitTests.class)
+public class ExampleUnitTest {
 
-        // ... implementation of unit test
+    // ... implementation of unit test
 
-    }
-
-
-
-    // For Integration Tests
-    @Category(ch.lihsmi.IntegrationTests.class)
-    public class ExampleIntegrationTest {
-
-        // ... implementation of integration test
-
-    }
+}
 
 
 
-    // For Functional Tests
-    @Category(ch.lihsmi.FunctionalTests.class)
-    public class ExampleFunctionalTest {
+// For Integration Tests
+@Category(ch.lihsmi.IntegrationTests.class)
+public class ExampleIntegrationTest {
 
-        // ... implementation of functional test
+    // ... implementation of integration test
 
-    }
+}
 
+
+
+// For Functional Tests
+@Category(ch.lihsmi.FunctionalTests.class)
+public class ExampleFunctionalTest {
+
+    // ... implementation of functional test
+
+}
+````
