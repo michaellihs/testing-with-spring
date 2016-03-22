@@ -3,6 +3,7 @@ package ch.lihsmi;
 import com.jayway.restassured.RestAssured;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.IntegrationTest;
@@ -19,6 +20,7 @@ import static org.hamcrest.CoreMatchers.is;
 @WebAppConfiguration
 @IntegrationTest({"server.port:0",
         "spring.datasource.url:jdbc:h2:mem:testing-with-spring;DB_CLOSE_ON_EXIT=FALSE"})
+@Category(ch.lihsmi.FunctionalTests.class)
 public class HelloControllerTest {
     @Value("${local.server.port}")
     int port;

@@ -13,5 +13,4 @@ public class DemoClassIntegrationTest {
         assertSame(1,1);
     }
 
-
 }
