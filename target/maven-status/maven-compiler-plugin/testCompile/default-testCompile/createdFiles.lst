@@ -1,4 +1,6 @@
-ch/lihsmi/SlowTests.class
 ch/lihsmi/DemoClassTest.class
-ch/lihsmi/FastTests.class
+ch/lihsmi/DemoClassIntegrationTest.class
 ch/lihsmi/HelloControllerTest.class
+ch/lihsmi/FunctionalTests.class
+ch/lihsmi/UnitTests.class
+ch/lihsmi/IntegrationTests.class
