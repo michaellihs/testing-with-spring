@@ -1,2 +1,4 @@
 idea/
+target/surefire-reports/
+
 testing-with-spring.iml
