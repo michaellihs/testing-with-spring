@@ -12,4 +12,7 @@ node {
     stage 'Run Integration Tests with Maven'
     sh 'mvn test -P IntegrationTests'
 
+    stage 'Run Functional Tests with Maven'
+    sh 'mvn test -P FunctionalTests'
+
 }
