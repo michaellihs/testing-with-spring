@@ -1,5 +1,6 @@
-package ch.lihsmi;
+package ch.lihsmi.functional;
 
+import ch.lihsmi.App;
 import com.jayway.restassured.RestAssured;
 import org.junit.Before;
 import org.junit.Test;
@@ -18,8 +19,7 @@ import static org.hamcrest.CoreMatchers.is;
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = App.class)
 @WebAppConfiguration
-@IntegrationTest({"server.port:0",
-        "spring.datasource.url:jdbc:h2:mem:testing-with-spring;DB_CLOSE_ON_EXIT=FALSE"})
+@IntegrationTest({"server.port:0", "spring.datasource.url:jdbc:h2:mem:testing-with-spring;DB_CLOSE_ON_EXIT=FALSE"})
 @Category(ch.lihsmi.FunctionalTests.class)
 public class HelloControllerTest {
     @Value("${local.server.port}")

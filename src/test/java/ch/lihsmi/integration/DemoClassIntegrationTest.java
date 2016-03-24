@@ -1,4 +1,4 @@
-package ch.lihsmi;
+package ch.lihsmi.integration;
 
 import org.junit.Test;
 import org.junit.experimental.categories.Category;

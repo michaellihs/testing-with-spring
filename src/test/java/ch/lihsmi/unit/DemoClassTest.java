@@ -1,5 +1,6 @@
-package ch.lihsmi;
+package ch.lihsmi.unit;
 
+import ch.lihsmi.DemoClass;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
