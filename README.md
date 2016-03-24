@@ -5,6 +5,35 @@ Contains documentation, code snippets and samples about how to test Spring (Boot
 
 
 
+Project Structure
+-----------------
+
+    .
+    ├── README.md                                                   # This file :-)
+    ├── pom.xml                                                     # Maven configuration file
+    └── src                                                         # Our (Java) sources and other resources
+    │   ├── jenkins                                                 # Folder containing Jenkins configuration
+    │   │   └── pipeline.groovy                                     # Pipeline configuration for Jenkins
+    │   ├── main                                                    # Our Java classes
+    │   │   └── ...
+    │   └── test                                                    # Our Java tests
+    │       ├── java
+    │       │   └── ch
+    │       │       └── lihsmi
+    │       │           ├── FunctionalTests.java                    # Interface for categorizing Functional Tests
+    │       │           ├── IntegrationTests.java                   # Interface for categorizing Integration Tests
+    │       │           ├── UnitTests.java                          # Interface for categorizing Unit Tests
+    │       │           ├── functional                              # Sub folder for Functional Tests
+    │       │           │   └── ...
+    │       │           ├── integration                             # Sub folder for Integration Tests
+    │       │           │   └── ...
+    │       │           └── unit                                    # Sub folder for Unit Tests
+    │       │               └── ...
+    │       └── resources
+    └── target
+
+
+
 Setup the Project
 -----------------
 
